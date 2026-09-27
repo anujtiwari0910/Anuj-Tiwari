@@ -1,0 +1,509 @@
+```css
+/* ==============================
+   BASIC RESET
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 30px;
+
+    background: #eef7f0;
+
+    color: #222;
+
+    overflow-x: hidden;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+header {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+header h1 {
+
+    margin: 0;
+
+    color: #16803c;
+
+    font-size: 40px;
+}
+
+
+header p {
+
+    margin-bottom: 0;
+
+    color: #555;
+
+    font-size: 18px;
+}
+
+
+/* ==============================
+   HEADINGS
+   ============================== */
+
+h2 {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+    line-height: 1.4;
+}
+
+
+h3 {
+
+    color: #16803c;
+
+    margin-top: 25px;
+}
+
+
+/* ==============================
+   LABELS
+   ============================== */
+
+label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   INPUTS
+   ============================== */
+
+input,
+select {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    background: white;
+}
+
+
+input:focus,
+select:focus {
+
+    outline: none;
+
+    border-color: #16803c;
+}
+
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+button {
+
+    background: #16803c;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    margin-right: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+button:hover {
+
+    background: #0f632e;
+}
+
+
+.buttonContainer {
+
+    text-align: center;
+}
+
+
+.clearButton {
+
+    background: #d9534f;
+}
+
+
+.clearButton:hover {
+
+    background: #b52b27;
+}
+
+
+/* ==============================
+   RESULT
+   ============================== */
+
+#result {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 30px auto 10px;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==============================
+   BREAKDOWN
+   ============================== */
+
+#breakdown {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==============================
+   CHART
+   ============================== */
+
+#chartBox {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    height: 450px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.chartContainer {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 330px;
+}
+
+
+#carbonChart {
+
+    width: 100% !important;
+
+    height: 100% !important;
+}
+
+
+#chartMessage {
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   GREEN SCORE
+   ============================== */
+
+#score {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==============================
+   TIPS
+   ============================== */
+
+#tips {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==============================
+   HISTORY
+   ============================== */
+
+#history {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#history ul {
+
+    padding-left: 25px;
+}
+
+
+#history li {
+
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+
+    margin-top: 40px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+   ============================== */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 15px;
+
+        overflow-x: hidden;
+    }
+
+
+    header {
+
+        padding: 20px 15px;
+
+        margin-bottom: 20px;
+    }
+
+
+    header h1 {
+
+        font-size: 28px;
+    }
+
+
+    header p {
+
+        font-size: 15px;
+    }
+
+
+    h2 {
+
+        font-size: 21px;
+
+        margin-bottom: 25px;
+    }
+
+
+    h3 {
+
+        font-size: 19px;
+    }
+
+
+    label {
+
+        font-size: 15px;
+    }
+
+
+    input,
+    select {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        font-size: 16px;
+    }
+
+
+    button {
+
+        width: 100%;
+
+        margin-right: 0;
+
+        font-size: 16px;
+    }
+
+
+    #result,
+    #breakdown,
+    #score,
+    #tips,
+    #history {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 15px;
+    }
+
+
+    #chartBox {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        height: 400px;
+
+        padding: 15px;
+    }
+
+
+    .chartContainer {
+
+        height: 280px;
+    }
+
+
+    footer {
+
+        padding: 20px 10px;
+
+        font-size: 13px;
+    }
+
+}
+```

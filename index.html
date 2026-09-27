@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Code Your Carbon</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>🌱 Code Your Carbon</h1>
+
+        <p>Track • Reflect • Reduce</p>
+
+    </header>
+
+
+    <h2>
+        My Lifestyle. My Carbon Footprint. My Responsibility.
+    </h2>
+
+
+    <!-- TRANSPORT -->
+
+    <h3>🚗 Daily Transport</h3>
+
+    <label for="vehicle">
+        Select your transport:
+    </label>
+
+    <select id="vehicle">
+
+        <option value="bike">
+            🏍️ Bike / Scooter
+        </option>
+
+        <option value="car">
+            🚗 Car
+        </option>
+
+        <option value="bus">
+            🚌 Bus
+        </option>
+
+        <option value="metro">
+            🚇 Metro / Train
+        </option>
+
+        <option value="walk">
+            🚶 Walking / Cycling
+        </option>
+
+    </select>
+
+
+    <label for="distance">
+        How many kilometres do you travel daily?
+    </label>
+
+    <input
+        type="number"
+        id="distance"
+        placeholder="Enter distance in km"
+        min="0"
+    >
+
+
+    <!-- ELECTRICITY -->
+
+    <h3>⚡ Daily Electricity</h3>
+
+    <label for="electricity">
+        How much electricity do you use daily?
+    </label>
+
+    <input
+        type="number"
+        id="electricity"
+        placeholder="Enter electricity in kWh"
+        min="0"
+    >
+
+
+    <!-- FOOD -->
+
+    <h3>🍛 Daily Food</h3>
+
+    <label for="vegMeals">
+        Vegetarian meals per day:
+    </label>
+
+    <input
+        type="number"
+        id="vegMeals"
+        placeholder="Number of vegetarian meals"
+        min="0"
+    >
+
+
+    <label for="nonVegMeals">
+        Non-vegetarian meals per day:
+    </label>
+
+    <input
+        type="number"
+        id="nonVegMeals"
+        placeholder="Number of non-vegetarian meals"
+        min="0"
+    >
+
+
+    <!-- WASTE -->
+
+    <h3>🗑️ Daily Waste</h3>
+
+    <label for="waste">
+        How much waste do you produce daily?
+    </label>
+
+    <input
+        type="number"
+        id="waste"
+        placeholder="Enter waste in kg"
+        min="0"
+    >
+
+
+    <!-- CALCULATE -->
+
+    <button onclick="calculateCarbon()">
+        🌱 Calculate Carbon Footprint
+    </button>
+
+
+    <!-- RESULT -->
+
+    <div id="result"></div>
+
+
+    <!-- BREAKDOWN -->
+
+    <div id="breakdown"></div>
+
+
+    <!-- CHART -->
+
+    <div id="chartBox">
+
+        <h3>📊 Carbon Footprint Chart</h3>
+
+        <div class="chartContainer">
+
+            <canvas id="carbonChart"></canvas>
+
+        </div>
+
+        <p id="chartMessage">
+            Calculate your footprint to see the chart.
+        </p>
+
+    </div>
+
+
+    <!-- SCORE -->
+
+    <div id="score"></div>
+
+
+    <!-- TIPS -->
+
+    <div id="tips"></div>
+
+
+    <!-- HISTORY -->
+
+    <div id="history"></div>
+
+
+    <!-- BUTTONS -->
+
+    <div class="buttonContainer">
+
+        <button onclick="resetCalculator()">
+            🔄 Reset Calculator
+        </button>
+
+        <button onclick="clearHistory()"
+                class="clearButton">
+            🗑️ Clear History
+        </button>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>🌱 Code Your Carbon</p>
+
+        <p>
+            Digital Green Challenge |
+            Track • Reflect • Reduce
+        </p>
+
+        <p>
+            Made as a B.Tech Student Project
+        </p>
+
+    </footer>
+
+
+    <!-- IMPORTANT:
+         Chart.js must load BEFORE script.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
